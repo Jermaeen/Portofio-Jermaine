@@ -1,0 +1,88 @@
+<!-- FILE: projects/project2.html -->
+<!-- Duplicate the project1 template and change names/images accordingly -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>High Velocity Bullet Casing Simulation — Details</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header simple">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">Back</a>
+      <nav class="main-nav" aria-label="Project nav">
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container project-detail">
+    <h1>High Velocity Bullet Casing Simulation</h1>
+    <p class="lead" style="line-height: 1.5;">The process behind this project included modeling the wall as a rigid body and fixed in space. 
+      Also included is modeling the bilinear isotropic hardening plasticity material of the bullet using mechanical properties 
+      provided by the Engineering Data in Ansys. An explicit dynamics simulation was performed to capture the high-speed impact 
+      and resulting plastic deformation of the bullet. The goal was to analyze the mesh plot, velocity and constraint plots, total 
+      Deformation, equivalent stress, equivalent plastic strain, and user-defined result of effective strain of the bullet material upon impact. 
+      This provides insight into the material’s performance under extreme conditions.
+</p>
+    <section class="project-gallery">
+      <!-- multiple images same as the 2x2 gallery — replace with your images -->
+      <div class="detail-grid">
+        <img src="images/Screenshot 2025-09-17 212108.png" alt="Project One image 1"  class="gallery-img"/>
+        <img src="images/Screenshot 2025-09-17 212123.png" alt="Project One image 2"  class="gallery-img"/>
+        <img src="images/Screenshot 2025-09-17 212059.png " alt="Project One image 3"  class="gallery-img"/>
+        <img src="images/Screenshot 2025-07-10 002117.png" alt="Project One image 4"  class="gallery-img"/>
+      </div>
+    </section>
+
+    <section class="project-more">
+      <h2>Technical Details</h2>
+      <div class="photo-text-row">
+        <img src="images/Screenshot 2025-09-17 212108.png" alt="Photo" class="side-photo">
+        <div class="text">
+          <p style="line-height: 1.5;"> <strong>Process, Challenges & Solutions</strong>  <br> 
+            The process behind this project included providing the velocity magnitude and direction for the bullet along with 
+            modeling the wall as a rigid body and fixed in space. 
+            Also included is modeling the bilinear isotropic hardening plasticity material of the bullet using mechanical properties 
+            provided by the Engineering Data in Ansys. An explicit dynamics simulation was performed to capture the high-speed impact 
+            and resulting plastic deformation of the bullet. The goal was to analyze the mesh plot, velocity and constraint plots, total 
+            deformation, equivalent stress, equivalent plastic strain, and user-defined result of effective strain of the bullet material upon impact. 
+            This provides insight into the material’s performance under extreme conditions.
+          </p>
+          <p style="line-height: 1.5;"> <strong>Results</strong> <br>
+          The results of this simulation provided insight into the material’s performance under extreme conditions. 
+          From the images above, you can see the mesh plot, velocity and constraint plots, total deformation, equivalent stress, equivalent plastic strain, and user-defined result of effective strain of the bullet.
+          With each displaying the different areas of stress and strain that the bullet undergoes upon impact. As expected the hightest amount of total deformation and stress occurs at the tip of the bullet where it makes contact with the rigid wall.
+          Associated with the area of high deformation is the highest amount of equivalent von-mises stress which indicates that the material has yielded and undergone plastic deformation.
+          This is further represnted in the next image which shows the equivalent plastic strain of the bullet. The user-defined result of effective strain also shows the same trend with the highest amount of effective strain occurring at the tip of the bullet.
+         </p> 
+        </div>
+      </div>
+      <section class="project-gallery">
+      <!-- multiple images same as the 2x2 gallery — replace with your images -->
+      <div class="detail-grid">
+        <img src="images/Screenshot 2025-09-17 212153.png" alt="Full Design" class="gallery-img"/>
+        <img src="images/Screenshot 2025-09-17 212241.png" alt="Protoype Inner Chamber" class="gallery-img"/>
+        <img src="images/Screenshot 2025-09-17 212250.png" alt="Protoype Filter Cap" class="gallery-img"/>
+        <img src="images/Screenshot 2025-09-17 212302.png" alt="Protoype Battery" class="gallery-img"/>
+      </div>
+    </section>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+  </main>
+
+    <!-- Lightbox modal for clicking gallery images -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <!-- <button id="lightboxClose" class="lightbox-close" aria-label="Close">✕</button> -->
+      <span class="close" tabindex="0">&times;</span>
+      <span class="prev" tabindex="0">&#10094;</span>
+      <img id="lightboxImg" src="" alt="Enlarged image" />
+      <span class="next" tabindex="0">&#10095;</span>
+    </div>
+</body>
+</html>

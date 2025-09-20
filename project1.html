@@ -1,0 +1,97 @@
+<!-- FILE: projects/project1.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project One — Details</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header simple">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">Back</a>
+      <nav class="main-nav" aria-label="Project nav">
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container project-detail">
+    <h1>Portable Coffee Maker</h1>
+    <p class="lead" style="line-height: 1.5;">The project addressed the limitations of conventional coffee makers by developing a portable, 
+      battery-powered unit capable of attaching to most mugs, cups, and thermoses while efficiently heating and brewing coffee on the go. 
+      The approach involved creating detailed CAD models in SolidWorks, conducting structural FEA in ANSYS, 
+      and iteratively refining the design to resolve heating inconsistencies, battery drain, and leakage through insulation upgrades, 
+      heating element optimization, and improved sealing. The final prototype successfully brewed 240 ml of coffee in 2 minutes 45 seconds,
+      maintained 93 °C ± 2 °C for 10 minutes, and passed a 3 ft drop test without leaks or damage.
+    </p>
+
+    <section class="project-gallery">
+      <!-- multiple images same as the 2x2 gallery — replace with your images -->
+      <div class="detail-grid">
+        <img src="images/Screenshot 2025-05-08 104205.png" alt="Project One image 1" data-full="images/Screenshot 2025-05-08 104205.png" class="gallery-img"/>
+        <img src="images/Screenshot 2025-05-08 104317.png" alt="Project One image 2" data-full="images/Screenshot 2025-05-08 104317.png" class="gallery-img"/>
+        <img src="images/Screenshot 2025-05-08 021014.png" alt="Project One image 3" data-full="images/Screenshot 2025-05-08 021014.png" class="gallery-img"/>
+        <img src="images/Screenshot 2025-05-08 100349.png" alt="Project One image 4" data-full="images/Screenshot 2025-05-08 100349.png" class="gallery-img"/>
+      </div>
+    </section>
+
+    <section class="project-more">
+      <h2>Technical Details</h2>
+      <p style="line-height: 1.5;"> <strong>Challenges & Solutions</strong>  <br>
+        During development, the prototype faced several issues. The heating was either inconsistent or insufficient, leading to suboptimal brewing. 
+        The battery life also proved to be a limitation, as it drained quickly under normal operation. Additionally, early versions of the design 
+        experienced leakage at the joints, which raised both performance and safety concerns. To address these challenges, the team added double-walled 
+        insulation and redesigned the heating element layout to provide more consistent and adequate heating. Battery performance was improved by 
+        optimizing the PWM heating system and insulating the internal piping to reduce heat loss. Leakage was resolved by switching to food-safe silicone 
+        gaskets and refining the fastener layout, ensuring a secure, durable seal.
+      </p>
+      <p style="line-height: 1.5;"> <strong>Results</strong> <br>
+        The final prototype successfully brewed 240 ml of coffee in 2 minutes and 45 seconds, meeting the desired speed and efficiency targets. 
+        Temperature stability was maintained at 93 °C ± 2 °C for a full 10 minutes, ensuring optimal flavor extraction and heat retention for the beverage.
+        In durability testing, the unit passed a 3-foot drop test without any leaks or structural damage, confirming that the improvements to sealing and assembly design were effective. 
+        These results validated the design changes, demonstrating that the product met both performance and reliability goals. </p> 
+
+        <section class="project-gallery">
+      <!-- multiple images same as the 2x2 gallery — replace with your images -->
+      <div class="detail-grid">
+        <img src="images\image22.jpg" alt="Prototype Full Design" class="gallery-img"/>
+        <img src="images\image33.jpg" alt="Protoype Inner Chamber" class="gallery-img"/>
+        <img src="images\image8.jpg" alt="Protoype Filter Cap" class="gallery-img"/>
+        <img src="images\image10.jpg" alt="Protoype Battery" class="gallery-img"/>
+        <img src="images\image17.jpg" alt="Protoype Filter Cap Dissablemed" class="gallery-img"/>
+        <img src="images\image18.jpg" alt="Protoype Filter Cap Side View" class="gallery-img"/>
+      </div>
+    </section>
+
+      <h2>Role & Timeline</h2>
+      <p style="line-height: 1.5;"> My role in this project involved being the primary CAD and supplementary FEA Engineer. Specifically, this meant creating the detailed CAD models in SolidWorks, 
+        assisting in conducting structural FEA on the design using ANSYS and participating in prototype testing and data collection.
+      </p>
+      <p style="line-height: 1.5;">
+        The project was completed over a 4-month period, with the initial design phase taking 6 weeks, followed by 2 weeks of FEA analysis and optimization, 
+        and concluding with 6 weeks of prototyping and testing. This timeline allowed for iterative improvements based on testing feedback, ensuring that the final product met all performance criteria.
+      </p>
+      <section class="project-gallery"> 
+        <div class="detail-grid">
+          <img src="images\image25.png" alt="Timeline of Portable Coffee Maker" class="gallery-img"/>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+  </main>
+
+    <!-- Lightbox modal for clicking gallery images -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <!-- <button id="lightboxClose" class="lightbox-close" aria-label="Close">✕</button> -->
+      <span class="close" tabindex="0">&times;</span>
+      <span class="prev" tabindex="0">&#10094;</span>
+      <img id="lightboxImg" src="" alt="Enlarged image" />
+      <span class="next" tabindex="0">&#10095;</span>
+    </div>
+</body>
+</html>
